@@ -1,0 +1,69 @@
+Name: Tags
+Type: FolderType
+Children:
+- Name: HREG0
+  Type: ModbusTag
+  DataType: Float
+  Value: 0.0
+- Name: HREG2_with_EU
+  Id: g=2ab302402cb11cbe06264c32207bf52d
+  Type: ModbusTag
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: NumRegister
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 2
+  - Name: ns=0;EngineeringUnits
+    Type: EUInformationType
+    DataType: EUInformation
+    Value: 
+     {
+      "TypeId": {
+       "Id": 887
+      },
+      "Body": {
+       "namespaceUri": "",
+       "unitId": 0,
+       "displayName": {
+        "NamespaceIndex": -1,
+        "LocaleId": "",
+        "Text": ""
+       },
+       "description": {
+        "NamespaceIndex": -1,
+        "LocaleId": "",
+        "Text": ""
+       }
+      }
+     }
+    Children:
+    - Name: UnitId
+      Type: BaseVariableType
+      DataType: Int32
+      ReferenceType: HasProperty
+      Value: 4408652
+    - Name: DisplayName
+      Type: BaseVariableType
+      DataType: LocalizedText
+      ReferenceType: HasProperty
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    - Name: Description
+      Type: BaseVariableType
+      DataType: LocalizedText
+      ReferenceType: HasProperty
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+- Name: HREG4
+  Type: ModbusTag
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: BitOffset
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 0
+  - Name: NumRegister
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 4
